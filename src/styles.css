@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+.App {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  background-color: #0d3f4a;
+  padding-bottom: 50px;
+  color: white;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+textarea {
+  height: 120px;
+  width: 90%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+}
+
+.header {
+  font-weight: 700;
+  border-top: solid;
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.standup-list {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding-bottom: 25px;
+}
+
+.person-standup {
+  justify-content: center;
+}
+
+.person-standup div {
+  padding: 10px;
+}
+.person-standup textarea {
+  max-width: 600px;
+}
+
+.name-checkbox {
+  display: flex;
+  justify-content: center;
+}
+
+.standup-notes {
+  text-align: left;
+  padding-left: 20px;
+  margin: 3px;
+}
+
+.button {
+  background-color: #fb5004;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.secondary-button {
+  background-color: rgb(164, 232, 206);
+  color: rgb(13, 63, 74);
+  padding: 0.6rem 0.8rem;
+  margin-left: 10px;
+  border: none;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  opacity: 70%;
+}
+
+.add-member {
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px;
+}
+.add-member form input {
+  margin: 10px;
+}
+
+.clickable-item {
+  cursor: pointer;
+}
+
+.clickable-item:hover {
+  color: rgb(164, 232, 206);
+}
+
+.person-standup-section2 {
+  display: flexbox;
+}
+
+.breakouts {
+  background-image: url("https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcDU2N2s2a2lsMTBkaG96aGR2bzZjMTJlcHR3djdvbDd5MHN0NngxaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iHgznkhwC6XYs/giphy.gif");
+
+  color: black;
+  -webkit-text-stroke: 0.5px black;
+  margin: auto;
+  width: 80%;
+  min-height: 80px;
+  padding-bottom: 10px;
+}
+
+.breakouts li {
+  background-color: white;
+  width: 50%;
+  margin: auto;
+  border-style: groove;
+  border-color: #0d3f4a;
+}
