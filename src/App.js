@@ -11,24 +11,23 @@ const emojis = new Emoji();
 
 const defaultNames = [
   `Scott D'Antuono ${emojis.getRandomEmoji()}`,
-  `Brett Stoppel ${emojis.getRandomEmoji()}`,
-  `Erin Kim ${emojis.getRandomEmoji()}`,
-  `Randy Frutos ${emojis.getRandomEmoji()}`,
-  `Cez Corpus ${emojis.getRandomEmoji()}`,
-  `Simon Rentzke ${emojis.getRandomEmoji()}`,
-  `Joe Goldwasser ${emojis.getRandomEmoji()}`,
-  `Hank Zhang ${emojis.getRandomEmoji()}`,
-  `Michael Bourke ${emojis.getRandomEmoji()}`,
-  `Raul Morales ${emojis.getRandomEmoji()}`,
-  `Zenia O'Leary ${emojis.getRandomEmoji()}`,
-  `Dave Gynn 🐐 ${emojis.getRandomEmoji()}`,
-  "Patrick Hammons 🦅 🦕",
-  "Meg Young ✨💫",
-  `Grant Stannard  ${emojis.getRandomEmoji()}`,
-  `Juan Ramirez 🎮`,
-  `Megan Ring ${emojis.getRandomEmoji()}`,
-  `Aaron Norling ${emojis.getRandomEmoji()}`,
-  `Al Chou ${emojis.getRandomEmoji()}`,
+  `Michael Scott ${emojis.getRandomEmoji()}`,
+  `Dwight Schrute ${emojis.getRandomEmoji()}`,
+  `Jim Halpert ${emojis.getRandomEmoji()}`,
+  `Pam Beasley ${emojis.getRandomEmoji()}`,
+  `Ryan Howard ${emojis.getRandomEmoji()}`,
+  `Andy Bernard ${emojis.getRandomEmoji()}`,
+  `Robert California ${emojis.getRandomEmoji()}`,
+  `Stanley Hudson ${emojis.getRandomEmoji()}`,
+  `Kevin Malone ${emojis.getRandomEmoji()}`,
+  `Meredith Palmer ${emojis.getRandomEmoji()}`,
+  `Angela Martin ${emojis.getRandomEmoji()}`,
+  `Oscar Martinez  ${emojis.getRandomEmoji()}`,
+  `Phyllis Vance/Lapin  ${emojis.getRandomEmoji()}`,
+  `Kelly Kapoor  ${emojis.getRandomEmoji()}`,
+  `Toby Flenderson  ${emojis.getRandomEmoji()}`,
+  `Creed Bratton ${emojis.getRandomEmoji()}`,
+  `Darryl Philbin ${emojis.getRandomEmoji()}`,
 ];
 
 export default function App() {
@@ -39,6 +38,7 @@ export default function App() {
   const [names, setNames] = useState(defaultNames);
   const [orderSet, setOrderSet] = useState(false);
   const [breakouts, setBreakouts] = useState([]);
+  const isHolidaySeason = new Date().getMonth() === 11;
 
   function shuffleArray() {
     const newArray = [];
@@ -94,18 +94,13 @@ export default function App() {
       <Header>
         <h3>{niceDateString}</h3>
       </Header>
-
-      {/* <img
-        style={{ margin: "3px" }}
-        src="https://www.teamdesk.net/blog/wp-content/uploads/2020/12/Happy-Holidays-1024x683.jpg"
-        height="200"
-      />
-      <br /> */}
-      <TempHeader
-        title="🎁❄️ Happy Holidays 🎄⛄️"
-        bgColor="#B41204"
-        bgImage="https://www.shutterstock.com/image-photo/copyspace-text-concept-christmas-new-260nw-2423952547.jpg"
-      />
+      {isHolidaySeason && (
+        <TempHeader
+          title="🎁❄️ Happy Holidays 🎄⛄️"
+          bgColor="#B41204"
+          bgImage="https://www.shutterstock.com/image-photo/copyspace-text-concept-christmas-new-260nw-2423952547.jpg"
+        />
+      )}
 
       {!orderSet && (
         <button className="button" onClick={shuffleArray}>

@@ -3,11 +3,11 @@ function Header({ children }) {
     <>
       <div style={{ backgroundColor: "white" }}>
         <img
-          style={{ paddingTop: "20px" }}
-          src="https://cdn.shortpixel.ai/spai/q_lossless+to_auto+ret_img/www.boldin.com/retirement/wp-content/themes/chap-child/new-assets/img/boldin-logo.svg"
+          style={{ paddingTop: "20px", height: "100px" }}
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Dunder_Mifflin%2C_Inc.svg/1200px-Dunder_Mifflin%2C_Inc.svg.png"
         />
       </div>
-      <h2 className="header">💻 Welcome to the Planner Team Standup 💻</h2>
+      <h2 className="header">💻 Welcome to Team Standup 💻</h2>
       {children}
     </>
   );
